@@ -9,13 +9,19 @@
 
   <form>
     <label for="number"></label><input type="text" name="number" id="number" />
-    <button type="button" name="button" id="button" >Valider</button>
+    <button type="button" name="button" id="button1" >+</button>
+    <button type="button" name="button" id="button2" >-</button>
   </form>
   <script src="jquery-3.2.1.js"></script>
   <script>
-  $("#button").click (function () {
+  $("#button1").click (function () {
     var number = $("#number").val();
     number++;
+  $("#number").val(number);
+  });
+  $("#button2").click (function () {
+    var number = $("#number").val();
+    number--;
   $("#number").val(number);
   });
   </script>
